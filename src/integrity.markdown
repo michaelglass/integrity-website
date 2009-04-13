@@ -52,9 +52,9 @@ Then, tell Passenger to start your app: `$ touch tmp/restart.txt`
 Thin
 ----
 
-1. Make sure [Thin][] is installed:
+1. Install [Thin][] if necessary:
 
-        $ gem install thin` otherwise.
+        $ gem install thin
 
 2. Run the installer:
 
