@@ -130,13 +130,13 @@ Integrity gives you a modular notification's system for this.
 With Integrity, you can receive your notifications in a few different ways.
 Don't worry, all of these are easy to set up:
 
-- [Email](http://github.com/foca/integrity-email),
+- [Email](http://github.com/integrity/integrity-email),
   by [Nicolás Sanguinetti][foca]
 - [Jabber](http://github.com/ph/integrity-jabber),
   by [Pier-Hugues Pellerin](http://heykimo.com)
 - [Campfire](http://github.com/defunkt/integrity-campfire),
   by [Chris Wanstrath](http://ozmm.org)
-- [IRC](http://github.com/sr/integrity-irc), by [Simon Rozet][sr]
+- [IRC](http://github.com/integrity/integrity-irc), by [Simon Rozet][sr]
 - [Twitter](http://github.com/cwsaylor/integrity-twitter),
   by [Chris Saylor](http://justhack.com)
 - [Basecamp](http://github.com/pyrat/integrity-basecamp), by
