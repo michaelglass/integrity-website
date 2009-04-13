@@ -32,7 +32,9 @@ installed on your server, and then run the built-in installer.
 This will create a couple files on your server,
 mainly `config.yml` and `config.ru`.
 
-You may encounter an error suggesting that `integrity_projects` table is missing in-spite of the output of the install command above; in that case try the following:
+You may encounter an error suggesting that `integrity_projects` table is
+missing in-spite of the output of the install command above; in that
+case try the following:
 
     $ integrity migrate_db config.yml
 
