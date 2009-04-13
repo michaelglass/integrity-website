@@ -60,4 +60,4 @@ cat <<EOF
   </script>
   </body>
 </html>
-
+EOF
