@@ -79,7 +79,14 @@ Heroku
         $ integrity install --heroku ~www-data/integrity
         $ cd ~www-data/integrity
 
-3. Edit the `:base_uri` option in `integrity-config.rb` (or add it if necessary).  It should now look something like this:
+3. Git-ify it.
+
+        $ git init && git add . && git commit -am "Initial import"
+
+4. Heroku-ify it.
+        $ heroku create
+
+5. Edit the `:base_uri` option in `integrity-config.rb` (or add it if necessary).  It should now look something like this:
 
         require "rubygems"
         gem "integrity"
@@ -96,13 +103,6 @@ Heroku
         }
 
         Integrity.new
-
-4. Git-ify it.
-
-        $ git init && git add . && git commit -am "Initial import"
-
-5. Heroku-ify it.
-        $ heroku create
 
 6. Get it up and running on Heroku.
 
