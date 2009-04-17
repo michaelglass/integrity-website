@@ -70,9 +70,9 @@ Thin
 Heroku
 ------
 
-1. Install Heroku, if necessary.
+1. Install the Heroku gem if necessary.
 
-    $ gem install heroku
+        $ gem install heroku
 
 2. Run the installer, passing it the `--heroku` option.
 
@@ -81,12 +81,16 @@ Heroku
 
 3. Git-ify it.
 
-        $ git init && git add . && git commit -am "Initial import"
+        $ git init
+        $ git add .
+        $ git commit -am "Initial import"
 
 4. Heroku-ify it.
+
         $ heroku create
 
-5. Edit the `:base_uri` option in `integrity-config.rb` (or add it if necessary).  It should now look something like this:
+5. Edit the `:base_uri` option in `integrity-config.rb`.
+   It should now look something like this:
 
         require "rubygems"
         gem "integrity"
@@ -109,12 +113,11 @@ Heroku
         $ git push heroku master
         $ heroku rake db:migrate
 
-If Heroku rejects your push while trying to install gems, edit the `.gems` file, and make sure that it is installing version 0.1.9.1 or later.
+You may also want to install, say, the `integrity-email` gem.  Simply list
+it on its own line in the `.gems` manifest:
 
-You may also want to install, say, the `integrity-email` gem.  Simply list it on its own line in the `.gems` manifest:
-
-        integrity
-        integrity-email
+        integrity --version 0.1.9.3
+        integrity-email # Add that line
 
 (You'll want to go edit `integrity-config.rb` to require it, as well.)
 
