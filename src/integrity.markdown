@@ -67,6 +67,53 @@ Thin
 
         $ thin -C thin.yml -R config.ru start
 
+Heroku
+------
+
+1. Run the installer, passing it the `--heroku` option.
+
+        $ integrity install --heroku ~www-data/integrity
+        $ cd ~www-data/integrity
+
+2. Edit the `:base_uri` option in `integrity-config.rb` (or add it if necessary).  It should now look something like this:
+
+        require "rubygems"
+        gem "integrity"
+        require "integrity"
+
+        Integrity.config = {
+          :base_uri         => 'http://mydomain.tld' # Edited this!
+          :database_uri     => ENV["DATABASE_URL"],
+          :export_directory => File.dirname(__FILE__) + "/tmp",
+          :log              => File.dirname(__FILE__) + "/log/integrity.log",
+          # Uncomment to setup a password
+          # :admin_usenrame   => "admin",
+          # :admin_password   => "foobar"
+        }
+
+        Integrity.new
+
+3. Git-ify it.
+
+        $ git init && git add . && git commit -am "Initial import"
+
+4. Heroku-ify it.
+        $ heroku create
+
+5. Get it up and running on Heroku.
+
+        $ git push heroku master
+        $ heroku rake db:migrate
+
+If Heroku rejects your push while trying to install gems, edit the `.gems` file, and make sure that it is installing version 0.1.9.1 or later.
+
+You may also want to install, say, the `integrity-email` gem.  Simply list it on its own line in the `.gems` manifest:
+
+        integrity
+        integrity-email
+
+(You'll want to go edit `integrity-config.rb` to require it, as well.)
+
 Configure a web proxy {#proxy}
 ---------------------
 
