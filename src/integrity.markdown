@@ -186,7 +186,7 @@ Don't worry, all of these are easy to set up:
 
 - [Email](http://github.com/integrity/integrity-email),
   by [Nicolás Sanguinetti][foca]
-- [Jabber](http://github.com/ph/integrity-jabber),
+- [Jabber](http://github.com/hukl/integrity-jabber),
   by [Pier-Hugues Pellerin](http://heykimo.com)
 - [Campfire](http://github.com/defunkt/integrity-campfire),
   by [Chris Wanstrath](http://ozmm.org)
