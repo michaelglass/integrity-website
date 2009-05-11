@@ -16,6 +16,10 @@ cat <<EOF
   <script src='/javascript/shell.js' type='text/javascript'></script>
 </head>
 <body>
+<a href="http://github.com/integrity">
+  <img style="position: absolute; top: 0; right: 0; border: 0;"
+src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+alt="Fork me on GitHub" /></a>
   <div id='header'>
     <h1><a href='/' rel='home'>Integrity</a></h1>
     <h2>the easy and fun automated
