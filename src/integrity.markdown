@@ -197,7 +197,7 @@ Don't worry, all of these are easy to set up:
   [Alastair Brunton](http://www.simplyexcited.co.uk)
 - [Yammer](http://github.com/jstewart/integrity-yammer/tree), by
   [Jason Stewart](http://github.com/jstewart)
-
+- [Shell Scripts](http://github.com/michaelglass/integrity-shell), by [Michael Glass & Friends](http://github.com/michaelglass)
 **NOTE:** If you wrote a notifier for something else, let us know at
 <info@integrityapp.com> and we'll add you here :)
 
